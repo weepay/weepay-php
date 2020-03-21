@@ -11,6 +11,7 @@ class Address extends BaseModel
     private $address;
     private $city;
     private $country;
+    private $district;
     private $zipCode;
 
     /**
@@ -113,6 +114,24 @@ class Address extends BaseModel
         return $this;
     }
 
+    /**
+     * Get the value of district
+     */
+    public function getDistrict()
+    {
+        return $this->district;
+    }
+    /**
+     * Set the value of district
+     *
+     * @return  self
+     */
+    public function setDistrict($district)
+    {
+        $this->district = $district;
+
+        return $this;
+    }
     public function getJsonObject()
     {
         return JsonBuilder::create()
@@ -120,6 +139,7 @@ class Address extends BaseModel
             ->add("address", $this->getAddress())
             ->add("city", $this->getCity())
             ->add("country", $this->getCountry())
+            ->add("district", $this->getDistrict())
             ->add("zipCode", $this->getZipCode())
             ->getObject();
     }

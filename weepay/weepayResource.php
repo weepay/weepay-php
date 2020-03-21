@@ -11,26 +11,6 @@ class weepayResource extends ApiResource
     private $locale;
     private $systemTime;
 
-    protected static function getHttpHeaders(Request $request, Options $options)
-    {
-
-    }
-
-    protected static function getHttpHeadersV2($uri, Request $request = null, Options $options)
-    {
-
-    }
-
-    protected static function prepareAuthorizationString(Request $request, Options $options, $rnd)
-    {
-
-    }
-
-    protected static function prepareAuthorizationStringV2($uri, Request $request = null, Options $options, $rnd)
-    {
-
-    }
-
     public function getStatus()
     {
         return $this->status;
