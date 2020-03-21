@@ -1,0 +1,17 @@
+{
+    "name": "weepay/weepay-php",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "weepay",
+            "email": "developer@weepay.co"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "weepay\\": "weepay/"
+        }
+    },
+    "require": {}
+}
