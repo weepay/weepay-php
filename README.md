@@ -20,7 +20,7 @@ require_once('vendor/autoload.php');
 
 
 ```php
-require_once('weepay-php/weepayBootstrap.php');
+require_once('weepayBootstrap.php');
 ```
 # Usage
 
