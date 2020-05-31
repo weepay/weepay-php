@@ -1,7 +1,7 @@
 # weepay-PHP
-PHP Integration
+PHP Integration for 
 # Requirements
-PHP 5.3 and later.
+PHP 5.3 and later.[weepay](http://weepay.co/)
 
 # Installation
 ### Composer
