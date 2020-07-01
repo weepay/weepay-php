@@ -67,6 +67,5 @@ class CreatePaymentRequestInitializeResource extends weepayResource
     {
         $this->paymentId = $paymentId;
 
-        return $this;
     }
 }

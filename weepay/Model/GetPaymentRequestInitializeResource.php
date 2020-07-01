@@ -42,7 +42,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     {
         $this->paymentStatus = $paymentStatus;
 
-        return $this;
     }
 
     /**
@@ -62,7 +61,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     {
         $this->paymentId = $paymentId;
 
-        return $this;
     }
 
     /**
@@ -82,7 +80,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     {
         $this->orderId = $orderId;
 
-        return $this;
     }
 
     /**
@@ -102,7 +99,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     {
         $this->price = $price;
 
-        return $this;
     }
 
     /**
@@ -122,7 +118,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     {
         $this->currency = $currency;
 
-        return $this;
     }
 
     /**
@@ -142,7 +137,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     {
         $this->paymentType = $paymentType;
 
-        return $this;
     }
 
     /**
@@ -162,7 +156,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     {
         $this->transactionStatus = $transactionStatus;
 
-        return $this;
     }
 
     /**
@@ -182,7 +175,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     {
         $this->installement = $installement;
 
-        return $this;
     }
 
     /**
@@ -202,7 +194,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     {
         $this->preAuth = $preAuth;
 
-        return $this;
     }
 
     /**
@@ -221,8 +212,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     public function setPreAuthAmount($preAuthAmount)
     {
         $this->preAuthAmount = $preAuthAmount;
-
-        return $this;
     }
 
     /**
@@ -241,8 +230,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     public function setExchangeCurrency($exchangeCurrency)
     {
         $this->exchangeCurrency = $exchangeCurrency;
-
-        return $this;
     }
 
     /**
@@ -262,7 +249,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     {
         $this->exchangeRate = $exchangeRate;
 
-        return $this;
     }
 
     /**
@@ -282,7 +268,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     {
         $this->refundAmount = $refundAmount;
 
-        return $this;
     }
 
     /**
@@ -301,8 +286,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     public function setCreditCardBin($creditCardBin)
     {
         $this->creditCardBin = $creditCardBin;
-
-        return $this;
     }
 
     /**
@@ -321,8 +304,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     public function setCardAssociation($cardAssociation)
     {
         $this->cardAssociation = $cardAssociation;
-
-        return $this;
     }
 
     /**
@@ -341,8 +322,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     public function setCardFamily($cardFamily)
     {
         $this->cardFamily = $cardFamily;
-
-        return $this;
     }
 
     /**
@@ -361,8 +340,6 @@ class GetPaymentRequestInitializeResource extends weepayResource
     public function setFraudStatus($fraudStatus)
     {
         $this->fraudStatus = $fraudStatus;
-
-        return $this;
     }
 
     /**
@@ -381,7 +358,5 @@ class GetPaymentRequestInitializeResource extends weepayResource
     public function setComission($comission)
     {
         $this->comission = $comission;
-
-        return $this;
     }
 }

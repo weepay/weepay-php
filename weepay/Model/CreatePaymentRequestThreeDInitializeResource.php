@@ -25,6 +25,5 @@ class CreatePaymentRequestThreeDInitializeResource extends weepayResource
     {
         $this->threeDSecureUrl = $threeDSecureUrl;
 
-        return $this;
     }
 }
