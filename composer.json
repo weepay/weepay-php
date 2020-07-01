@@ -4,14 +4,14 @@
     "description": "weepay api php client",
     "homepage": "https://www.weepay.co",
     "keywords": [
-    "weepay",
-    "weepay.co",
-    "weepay php",
-    "weepay api",
-    "weepay api php client",
-    "weepay api php",
-    "weepay payment processing"
-  ],
+        "weepay",
+        "weepay.co",
+        "weepay php",
+        "weepay api",
+        "weepay api php client",
+        "weepay api php",
+        "weepay payment processing"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -25,7 +25,7 @@
         }
     },
     "require": {
-    "php": ">=5.3.0",
-    "ext-curl": "*"
+        "php": ">=5.3.0",
+        "ext-curl": "*"
     }
 }

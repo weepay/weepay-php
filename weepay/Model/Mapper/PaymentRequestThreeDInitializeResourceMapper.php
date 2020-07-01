@@ -11,7 +11,7 @@ class PaymentRequestThreeDInitializeResourceMapper extends weepayResourceMapper
         return new PaymentRequestThreeDInitializeMapper($rawResult);
     }
 
-    public function mapCheckoutFormInitializeResourceFrom(CreatePaymentRequestThreeDInitializeResource $initialize, $jsonObject)
+    public function mapPaymentRequestThreeDInitializeResourceFrom(CreatePaymentRequestThreeDInitializeResource $initialize, $jsonObject)
     {
         parent::mapResourceFrom($initialize, $jsonObject);
 
@@ -22,8 +22,8 @@ class PaymentRequestThreeDInitializeResourceMapper extends weepayResourceMapper
         return $initialize;
     }
 
-    public function mapCheckoutFormInitializeResource(CreatePaymentRequestThreeDInitializeResource $initialize)
+    public function mapPaymentRequestThreeDInitializeResource(CreatePaymentRequestThreeDInitializeResource $initialize)
     {
-        return $this->mapCheckoutFormInitializeResourceFrom($initialize, $this->jsonObject);
+        return $this->mapPaymentRequestThreeDInitializeResourceFrom($initialize, $this->jsonObject);
     }
 }

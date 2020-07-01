@@ -13,6 +13,6 @@ class CreatePaymentRequestThreeDInitialize extends CreatePaymentRequestThreeDIni
         $request->setOptions($options);
         $rawResult = parent::httpClient()->post($options->getBaseUrl() . "/Payment/PaymentRequestThreeD", null, $request->toJsonString());
 
-        return PaymentRequestThreeDInitializeMapper::create($rawResult)->jsonDecode()->mapCheckoutFormInitialize(new CreatePaymentRequestThreeDInitialize());
+        return PaymentRequestThreeDInitializeMapper::create($rawResult)->jsonDecode()->mapPaymentRequestThreeDInitialize(new CreatePaymentRequestThreeDInitialize());
     }
 }

@@ -11,14 +11,14 @@ class PaymentRequestInitializeMapper extends PaymentRequestInitializeResourceMap
         return new PaymentRequestInitializeMapper($rawResult);
     }
 
-    public function mapCheckoutFormInitializeFrom(CreatePaymentRequestInitialize $initialize, $jsonObject)
+    public function mapPaymentRequestInitializeFrom(CreatePaymentRequestInitialize $initialize, $jsonObject)
     {
-        parent::mapCheckoutFormInitializeResourceFrom($initialize, $jsonObject);
+        parent::mapPaymentRequestInitializeResourceFrom($initialize, $jsonObject);
         return $initialize;
     }
 
-    public function mapCheckoutFormInitialize(CreatePaymentRequestInitialize $initialize)
+    public function mapPaymentRequestInitialize(CreatePaymentRequestInitialize $initialize)
     {
-        return $this->mapCheckoutFormInitializeFrom($initialize, $this->jsonObject);
+        return $this->mapPaymentRequestInitializeFrom($initialize, $this->jsonObject);
     }
 }

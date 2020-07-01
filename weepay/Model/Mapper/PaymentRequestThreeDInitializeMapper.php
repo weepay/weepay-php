@@ -11,14 +11,14 @@ class PaymentRequestThreeDInitializeMapper extends PaymentRequestThreeDInitializ
         return new PaymentRequestThreeDInitializeMapper($rawResult);
     }
 
-    public function mapCheckoutFormInitializeFrom(CreatePaymentRequestThreeDInitialize $initialize, $jsonObject)
+    public function mapPaymentRequestThreeDInitializeFrom(CreatePaymentRequestThreeDInitialize $initialize, $jsonObject)
     {
-        parent::mapCheckoutFormInitializeResourceFrom($initialize, $jsonObject);
+        parent::mapPaymentRequestThreeDInitializeResourceFrom($initialize, $jsonObject);
         return $initialize;
     }
 
-    public function mapCheckoutFormInitialize(CreatePaymentRequestThreeDInitialize $initialize)
+    public function mapPaymentRequestThreeDInitialize(CreatePaymentRequestThreeDInitialize $initialize)
     {
-        return $this->mapCheckoutFormInitializeFrom($initialize, $this->jsonObject);
+        return $this->mapPaymentRequestThreeDInitializeFrom($initialize, $this->jsonObject);
     }
 }

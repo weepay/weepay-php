@@ -11,7 +11,7 @@ class PaymentRequestInitializeResourceMapper extends weepayResourceMapper
         return new PaymentRequestInitializeMapper($rawResult);
     }
 
-    public function mapCheckoutFormInitializeResourceFrom(CreatePaymentRequestInitializeResource $initialize, $jsonObject)
+    public function mapPaymentRequestInitializeResourceFrom(CreatePaymentRequestInitializeResource $initialize, $jsonObject)
     {
         parent::mapResourceFrom($initialize, $jsonObject);
 
@@ -28,8 +28,8 @@ class PaymentRequestInitializeResourceMapper extends weepayResourceMapper
         return $initialize;
     }
 
-    public function mapCheckoutFormInitializeResource(CreatePaymentRequestInitializeResource $initialize)
+    public function mapPaymentRequestInitializeResource(CreatePaymentRequestInitializeResource $initialize)
     {
-        return $this->mapCheckoutFormInitializeResourceFrom($initialize, $this->jsonObject);
+        return $this->mapPaymentRequestInitializeResourceFrom($initialize, $this->jsonObject);
     }
 }

@@ -13,6 +13,6 @@ class CreatePaymentRequestInitialize extends CreatePaymentRequestInitializeResou
         $request->setOptions($options);
         $rawResult = parent::httpClient()->post($options->getBaseUrl() . "/Payment/PaymentRequest", null, $request->toJsonString());
 
-        return PaymentRequestInitializeMapper::create($rawResult)->jsonDecode()->mapCheckoutFormInitialize(new CreatePaymentRequestInitialize());
+        return PaymentRequestInitializeMapper::create($rawResult)->jsonDecode()->mapPaymentRequestInitialize(new CreatePaymentRequestInitialize());
     }
 }
