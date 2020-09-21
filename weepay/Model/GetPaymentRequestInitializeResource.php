@@ -24,6 +24,7 @@ class GetPaymentRequestInitializeResource extends weepayResource
     private $cardFamily;
     private $fraudStatus;
     private $comission;
+    private $paymentDate;
 
     /**
      * Get the value of paymentStatus
@@ -358,5 +359,23 @@ class GetPaymentRequestInitializeResource extends weepayResource
     public function setComission($comission)
     {
         $this->comission = $comission;
+    }
+
+    /**
+     * Get the value of comission
+     */
+    public function getPaymentDate()
+    {
+        return $this->paymentDate;
+    }
+
+    /**
+     * Set the value of comission
+     *
+     * @return  self
+     */
+    public function setPaymentDate($paymentDate)
+    {
+        $this->paymentDate = $paymentDate;
     }
 }
