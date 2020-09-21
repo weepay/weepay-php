@@ -66,6 +66,9 @@ class GetPaymentRequestInitializeResourceMapper extends weepayResourceMapper
         if (isset($jsonObject->data->comission)) {
             $initialize->setComission($jsonObject->data->comission);
         }
+        if (isset($jsonObject->data->paymentDate)) {
+            $initialize->setPaymentDate($jsonObject->data->paymentDate);
+        }
         return $initialize;
     }
 
