@@ -13,11 +13,11 @@ print_r($getPaymentRequest);
 
 if ($getPaymentRequest->getStatus() == 'success') {
 
-    if($getPaymentRequest->paymentStatus() == 'SUCCESS'){
+    if($getPaymentRequest->getPaymentStatus() == 'SUCCESS'){
 
         echo "Ödeme Başarılı";
         
-    }else if($getPaymentRequest->paymentStatus() == 'FAILURE'){
+    }else if($getPaymentRequest->getPaymentStatus() == 'FAILURE'){
    
         echo "Ödeme Başarısız";
     }
