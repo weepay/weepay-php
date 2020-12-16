@@ -25,7 +25,7 @@ if ($getPaymentRequest->getStatus() == 'success') {
 
 } else {
 
-    print_r($checkoutFormInitialize->getError());
-    print_r($checkoutFormInitialize->getErrorCode());
-    print_r($checkoutFormInitialize->getMessage());
+    print_r($getPaymentRequest->getError());
+    print_r($getPaymentRequest->getErrorCode());
+    print_r($getPaymentRequest->getMessage());
 }
