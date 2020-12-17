@@ -32,4 +32,4 @@ $options->setApiKey("xxx");
 $options->setSecretKey("xxx-xx-xx");
 $options->setBaseUrl("https://api.weepay.co/");
 ```
-If you have any questions, please open an issue on Github or contact us at destek@weepay.co.
+If you have any questions, please don't hesitate to contact us via Github with open an issue or contact us at destek@weepay.co.
