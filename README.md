@@ -1,4 +1,6 @@
 # weepay-PHP
+[![Latest Stable Version](https://poser.pugx.org/weepay/weepay-php/version)](https://packagist.org/packages/weepay/weepay-php)
+
 PHP Integration for [weepay](http://weepay.co/)
 # Requirements
 PHP 5.3 and later.
