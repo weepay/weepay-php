@@ -35,7 +35,7 @@ class DefaultHttpClient implements HttpClient
             CURLOPT_HTTPHEADER => array("Content-Type:application/json"),
             CURLOPT_SSL_VERIFYHOST => false,
             CURLOPT_SSL_VERIFYPEER => false,
-            CURLOPT_HEADER => true,
+            CURLOPT_HEADER => false,
             // CURLOPT_HTTPHEADER => $header,
         ));
     }
