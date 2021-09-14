@@ -24,7 +24,7 @@ class DefaultHttpClient implements HttpClient
 
     }
 
-    public function post($url, $header = null, $content)
+    public function post($url, $header = null, $content=null)
     {
         return $this->curl->exec($url, array(
             CURLOPT_CUSTOMREQUEST => "POST",
@@ -32,9 +32,10 @@ class DefaultHttpClient implements HttpClient
             CURLOPT_POSTFIELDS => $content,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_VERBOSE => false,
+            CURLOPT_HTTPHEADER => array("Content-Type:application/json"),
             CURLOPT_SSL_VERIFYHOST => false,
             CURLOPT_SSL_VERIFYPEER => false,
-            CURLOPT_HEADER => false,
+            CURLOPT_HEADER => true,
             // CURLOPT_HTTPHEADER => $header,
         ));
     }
